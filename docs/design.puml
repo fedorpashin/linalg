@@ -1,0 +1,101 @@
+@startuml
+
+title Design
+
+interface AnyVector {
+  +n: int
+  +value: list[float]
+}
+
+    class Vector
+    AnyVector <|-- Vector
+
+    class Solution
+    AnyVector <|-- Solution
+    Solution o-- "AnyAlgorithm[T: AnySystem]"
+    Solution o-- AnySystem
+
+        together {
+          interface "AnyAlgorithm[T: AnySystem]"
+          interface AnySystem
+        }
+
+        interface "AnyAlgorithm[T: AnySystem]" {
+          +solution(system: T) -> Vector
+        }
+        "AnyAlgorithm[T: AnySystem]" -> AnySystem
+
+        interface AnySystem {
+          +matrix: SquareMatrix
+          +vector: AnyVector
+        }
+        AnySystem o-- SquareMatrix
+
+        interface AnyMatrix
+
+            interface SquareMatrix {
+              +n: int
+            }
+            AnyMatrix <|-- SquareMatrix
+
+            together {
+              interface CommonSystemAlgorithm
+              class CommonSystem
+            }
+
+            interface CommonSystemAlgorithm {
+              +solution(system: CommonSystem) -> Vector
+            }
+            "AnyAlgorithm[T: AnySystem]" <|-- CommonSystemAlgorithm
+            CommonSystemAlgorithm -> CommonSystem
+
+            class CommonSystem {
+              +matrix: CommonSquareMatrix
+              +vector: AnyVector
+            }
+            AnySystem <|-- CommonSystem
+            CommonSystem o-- CommonSquareMatrix
+
+            class CommonRectangularMatrix {
+              +value: list[list[float]]
+            }
+            AnyMatrix <|-- CommonRectangularMatrix
+
+                class CommonSquareMatrix {
+                  +value: list[list[float]]
+                }
+                SquareMatrix <|-- CommonSquareMatrix
+                CommonRectangularMatrix <|-- CommonSquareMatrix
+
+            together {
+              interface TridiagonalMatrixSystemAlgorithm
+              class TridiagonalMatrixSystem
+            }
+
+            interface TridiagonalMatrixSystemAlgorithm {
+              +solution(system: TridiagonalMatrixSystem) -> Vector
+            }
+            "AnyAlgorithm[T: AnySystem]" <|-- TridiagonalMatrixSystemAlgorithm
+            TridiagonalMatrixSystemAlgorithm -> TridiagonalMatrixSystem
+
+            class TridiagonalMatrixSystem {
+              +matrix: TridiagonalMatrix
+              +vector: AnyVector
+            }
+            AnySystem <|-- TridiagonalMatrixSystem
+            TridiagonalMatrixSystem o-- TridiagonalMatrix
+
+                class TridiagonalMatrix {
+                  +a: list[float]
+                  +b: list[float]
+                  +c: list[float]
+                }
+                SquareMatrix <|-- TridiagonalMatrix
+
+                class GaussianElimination
+                CommonSystemAlgorithm <|-- GaussianElimination
+
+                class ThomasAlgorithm
+                TridiagonalMatrixSystemAlgorithm <|-- ThomasAlgorithm
+
+@enduml
