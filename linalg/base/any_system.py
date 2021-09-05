@@ -1,4 +1,4 @@
-from linalg.matrices.square import SquareMatrix
+from linalg.matrices.square_matrix import SquareMatrix
 from linalg.base.any_vector import AnyVector
 
 from abc import ABC

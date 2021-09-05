@@ -1,9 +1,9 @@
 from linalg.factories.system import System
 from linalg.vector import Vector
 from linalg.systems.common.common_system import CommonSystem
-from linalg.matrices.common_square import CommonSquareMatrix
+from linalg.matrices.common_square_matrix import CommonSquareMatrix
 from linalg.systems.tridiagonal_matrix.tridiagonal_matrix_system import TridiagonalMatrixSystem
-from linalg.matrices.tridiagonal import TridiagonalMatrix
+from linalg.matrices.tridiagonal_matrix import TridiagonalMatrix
 
 import unittest
 

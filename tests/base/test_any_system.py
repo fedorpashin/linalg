@@ -1,5 +1,5 @@
 from linalg.systems.common.common_system import CommonSystem
-from linalg.matrices.common_square import CommonSquareMatrix
+from linalg.matrices.common_square_matrix import CommonSquareMatrix
 from linalg.vector import Vector
 
 from typing import Final

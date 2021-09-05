@@ -1,4 +1,4 @@
-from linalg.matrices.square import SquareMatrix
+from linalg.matrices.square_matrix import SquareMatrix
 
 from dataclasses import dataclass
 from final_class import final

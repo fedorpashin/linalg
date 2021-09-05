@@ -1,7 +1,7 @@
 from linalg.base.any_vector import AnyVector
-from linalg.matrices.common_square import CommonSquareMatrix
+from linalg.matrices.common_square_matrix import CommonSquareMatrix
 from linalg.systems.common.common_system import CommonSystem
-from linalg.matrices.tridiagonal import TridiagonalMatrix
+from linalg.matrices.tridiagonal_matrix import TridiagonalMatrix
 from linalg.systems.tridiagonal_matrix.tridiagonal_matrix_system import TridiagonalMatrixSystem
 
 from multimethod import multimeta

@@ -11,10 +11,10 @@ from .factories.default_algorithm import *
 
 from .solution import *
 
-from .matrices.common import *
-from .matrices.square import *
-from .matrices.common_square import *
-from .matrices.tridiagonal import *
+from .matrices.common_matrix import *
+from .matrices.square_matrix import *
+from .matrices.common_square_matrix import *
+from .matrices.tridiagonal_matrix import *
 
 from .systems.common.common_system import *
 from .systems.common.common_system_algorithm import *

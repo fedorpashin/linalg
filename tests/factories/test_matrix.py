@@ -1,7 +1,7 @@
 from linalg.factories.matrix import Matrix
-from linalg.matrices.common import CommonMatrix
-from linalg.matrices.common_square import CommonSquareMatrix
-from linalg.matrices.tridiagonal import TridiagonalMatrix
+from linalg.matrices.common_matrix import CommonMatrix
+from linalg.matrices.common_square_matrix import CommonSquareMatrix
+from linalg.matrices.tridiagonal_matrix import TridiagonalMatrix
 
 import unittest
 

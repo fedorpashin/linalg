@@ -1,4 +1,4 @@
-from linalg.matrices.common_square import CommonSquareMatrix
+from linalg.matrices.common_square_matrix import CommonSquareMatrix
 
 from typing import Final
 
