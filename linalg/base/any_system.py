@@ -11,3 +11,7 @@ __all__ = ['AnySystem']
 class AnySystem(ABC):
     matrix: SquareMatrix
     vector: AnyVector
+
+    @property
+    def n(self):
+        return self.matrix.n
