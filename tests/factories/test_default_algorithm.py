@@ -5,7 +5,7 @@ from linalg.matrices.common_square import CommonSquareMatrix
 from linalg.matrices.tridiagonal import TridiagonalMatrix
 from linalg.systems.tridiagonal_matrix.tridiagonal_matrix_system import TridiagonalMatrixSystem
 from linalg.systems.common.default_common_system_algorithm import DefaultCommonSystemAlgorithm
-from linalg.systems.tridiagonal_matrix.default_tridiagonal_matrix_algorithm import DefaultTridiagonalMatrixSystemAlgorithm
+from linalg.systems.tridiagonal_matrix.default_tridiagonal_matrix_algorithm import DefaultTridiagonalMatrixSystemAlgorithm  # noqa
 
 import unittest
 
