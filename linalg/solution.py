@@ -37,3 +37,6 @@ class Solution(AnyVector):
     @property
     def algorithm(self):
         return self.__algorithm
+
+    def __repr__(self):
+        return self.value.__repr__()

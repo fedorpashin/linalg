@@ -27,3 +27,10 @@ class TestSolution(unittest.TestCase):
             ).value,
             ThomasAlgorithm().solution(self.system).value
         )
+
+    def test_repr(self):
+        solution = Solution(self.system)
+        self.assertEqual(
+            solution.__repr__(),
+            solution.value.__repr__()
+        )
