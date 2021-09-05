@@ -56,16 +56,15 @@ interface AnyVector {
             AnySystem <|-- CommonSystem
             CommonSystem o-- CommonSquareMatrix
 
-            class CommonRectangularMatrix {
+            class CommonMatrix {
               +value: list[list[float]]
             }
-            AnyMatrix <|-- CommonRectangularMatrix
+            AnyMatrix <|-- CommonMatrix
 
-                class CommonSquareMatrix {
-                  +value: list[list[float]]
-                }
-                SquareMatrix <|-- CommonSquareMatrix
-                CommonRectangularMatrix <|-- CommonSquareMatrix
+            class CommonSquareMatrix {
+              +value: list[list[float]]
+            }
+            SquareMatrix <|-- CommonSquareMatrix
 
             together {
               interface TridiagonalMatrixSystemAlgorithm
