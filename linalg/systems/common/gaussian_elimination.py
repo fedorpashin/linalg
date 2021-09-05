@@ -11,4 +11,4 @@ __all__ = ['GaussianElimination']
 class GaussianElimination(CommonSystemAlgorithm):
     def solution(self, system: CommonSystem) -> Vector:
         # @todo #6:120min Implement Gaussian Elimination
-        pass
+        raise NotImplementedError
