@@ -1,5 +1,5 @@
 from linalg.systems.tridiagonal_matrix.tridiagonal_matrix_system import TridiagonalMatrixSystem
-from linalg.matrices.tridiagonal import TridiagonalMatrix
+from linalg.matrices.tridiagonal_matrix import TridiagonalMatrix
 from linalg.vector import Vector
 
 from typing import Final

@@ -1,4 +1,4 @@
-from linalg.matrices.tridiagonal import TridiagonalMatrix
+from linalg.matrices.tridiagonal_matrix import TridiagonalMatrix
 
 from typing import Final
 

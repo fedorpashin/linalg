@@ -1,5 +1,5 @@
 from linalg.base.any_system import AnySystem
-from linalg.matrices.tridiagonal import TridiagonalMatrix
+from linalg.matrices.tridiagonal_matrix import TridiagonalMatrix
 from linalg.base.any_vector import AnyVector
 
 from dataclasses import dataclass

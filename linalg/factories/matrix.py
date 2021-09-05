@@ -1,6 +1,6 @@
-from linalg.matrices.common_square import CommonSquareMatrix
-from linalg.matrices.common import CommonMatrix
-from linalg.matrices.tridiagonal import TridiagonalMatrix
+from linalg.matrices.common_square_matrix import CommonSquareMatrix
+from linalg.matrices.common_matrix import CommonMatrix
+from linalg.matrices.tridiagonal_matrix import TridiagonalMatrix
 
 from typing import Union
 from multimethod import multimeta
