@@ -3,6 +3,7 @@ from linalg.base.any_system import AnySystem
 from linalg.base.any_algorithm import AnyAlgorithm
 from linalg.factories.default_algorithm import DefaultAlgorithm
 
+from dataclasses import dataclass
 from typing import TypeVar
 from final_class import final
 from overrides import overrides
@@ -15,6 +16,7 @@ T = TypeVar('T', bound=AnySystem)
 
 
 @final
+@dataclass
 class Solution(AnyVector):
     __system: T  # type: ignore
     __algorithm: AnyAlgorithm[T]
