@@ -30,7 +30,6 @@ class ThomasAlgorithm(TridiagonalMatrixSystemAlgorithm):
         x[n-1] = (g[n-1] - a[n-2] * β[n-2]) / (a[n-2] * α[n-2] + c[n-1])
 
         for i in range(n - 2, -1, -1):
-            print(i)
             x[i] = α[i] * x[i+1] + β[i]
 
         return Vector(x)
