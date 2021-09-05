@@ -28,5 +28,6 @@ jobs:
           python-version: 3.x
       - run: |
           pip install -r requirements.txt
-          pip install flake8
+          pip install flake8 mypy
           flake8
+          mypy
