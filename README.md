@@ -16,7 +16,7 @@ import linalg as la
 print(
     la.Solution(
         la.System(
-            la.Matrix(
+            la.TridiagonalMatrix(
                 [4, 9],
                 [23, 5],
                 [5, 16, 2]
