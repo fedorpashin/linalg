@@ -1,3 +1,5 @@
+__version__ = '0.0.1'
+
 from .base.any_vector import *
 from .base.any_matrix import *
 from .base.any_system import *
